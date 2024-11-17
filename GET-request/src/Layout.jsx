@@ -31,12 +31,13 @@ export default function Layout () {
         getCategoryAndNames()
     }, [])
 
-    if (loading) {
+    /*if (loading) {
         return <div>Загрузка...</div>;
     }
     if (error) {
         return <div>Ошибка: {error.message}</div>;
     }
+    */
 
     return (
         <>
