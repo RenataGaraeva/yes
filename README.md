@@ -4,6 +4,7 @@
 
 Стек:
 
+- JS
 - JSX
 - HTML
 - React
