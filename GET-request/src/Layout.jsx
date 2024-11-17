@@ -41,7 +41,7 @@ export default function Layout () {
     return (
         <>
             {animals.map(animal => (
-                    <div>
+                    <div key={animal.id}>
                         <div key={animal.id}>
                             {'Имя животного: ' + animal.name}
                         </div>
