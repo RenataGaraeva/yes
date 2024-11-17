@@ -1,8 +1,12 @@
-# React + Vite
+Задача: сделать GET-запрос с https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available
+ и вывести имя и вид животного, если они есть. Выводить нужно на страницу
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Стек:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- JSX
+- HTML
+- React
+
+
+[Ссылка на деплой](https://get-request-d4c40zq03-renata-garaevas-projects.vercel.app/)
