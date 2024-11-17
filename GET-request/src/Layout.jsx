@@ -31,27 +31,32 @@ export default function Layout () {
         getCategoryAndNames()
     }, [])
 
-    /*if (loading) {
+    if (loading) {
         return <div>Загрузка...</div>;
     }
     if (error) {
         return <div>Ошибка: {error.message}</div>;
     }
-    */
+
 
     return (
         <>
             {animals.map(animal => (
-                    <div key={animal.id}>
-                        <div key={animal.id}>
-                            {'Имя животного: ' + animal.name}
-                        </div>
-                        <div key={animal.id}>
-                            {'Вид животного: ' + animal.category.name}
-                        </div>
-                    </div>
-                )
-            )}
+                <div key={animal.id}>
+                    {animal.category?.name && animal.name ? (
+                        <>
+                            <div>
+                                {'Имя животного: ' + animal.name}
+                            </div>
+                            <div>
+                                {'Вид животного: ' + animal.category.name}
+                            </div>
+                        </>
+                    ) : (
+                        <div>Нет информации о имени или виде животного</div>
+                    )}
+                </div>
+            ))}
         </>
     )
-}
+     }
